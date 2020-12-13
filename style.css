@@ -1,0 +1,71 @@
+html {
+    background-color: #1d1d1d;
+}
+
+body {
+    background-color: var(--background);
+    font-family: didot;
+    color: var(--body);
+    min-height: 100vh;
+    min-width: 100vh;
+}
+
+nav {
+    text-align: right;
+    text-transform: lowercase;
+    margin-bottom:20px;
+}
+nav li {
+    display: inline;
+    margin: 20px;
+}
+a {
+    color: var(--link);
+    text-decoration: none;
+    border: 3px dashed var(--link-hover);
+    padding: 2px;
+}
+a:hover {
+    color: var(--link-hover);
+    border: 3px solid var(--link-hover);
+    padding: 2px;
+}
+
+/* container class; gives a margin */
+.container {
+    width: 80%;
+    margin: auto;
+    padding-top: 30px;
+}
+
+button {
+    display: inline-block;
+    background-color: gray;
+    color: white;
+    margin: 0px 20px;
+    text-align: center;
+}
+
+header p {
+    display: inline-block;
+}
+
+header {
+    border-bottom: var(--body) 10px solid;
+}
+
+#content {
+    padding: 20px;
+    line-height: 2;
+}
+footer {
+    clear: both;
+    text-align: center;
+    font-size: 10px;
+    text-transform: lowercase;
+    padding-bottom: 10px;
+    /*make it stick to the bottom of the viewport*/
+}
+
+
+

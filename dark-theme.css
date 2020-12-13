@@ -1,0 +1,14 @@
+:root {
+    --background: #000000;
+    --link: #db04db;
+    --link-hover: #dbdb04;
+    --body: #edf2f7;/*#17fbfb;*/
+}
+
+#showcase {
+    min-height: 400px;
+    background: url("https://i.imgur.com/9suJ5mg.jpg");
+    background-size: cover;
+    text-align: center;
+    padding-top: 20px;
+}
