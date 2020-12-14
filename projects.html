@@ -6,7 +6,7 @@
         <link rel="stylesheet" href="style.css">
         <link rel="stylesheet" id="theme-link">
         <script>
-            if(localStorage.getItem("theme") === "dark")
+            if(sessionStorage.getItem("theme") === "dark")
                 document.getElementById("theme-link").href="dark-theme.css";
             else
                 document.getElementById("theme-link").href="light-theme.css";
