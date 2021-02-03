@@ -1,15 +1,14 @@
-html {
-    background-color: #1d1d1d;
-}
+html { background-color: #000000; /*so that there isn't a blindingly bright flash of white before the dark theme loads*/ }
 
 body {
     background-color: var(--background);
-    font-family: didot;
     color: var(--body);
+    font-family: didot;
     min-height: 100vh;
     min-width: 100vh;
 }
 
+/*nav stuff*/
 nav {
     text-align: right;
     text-transform: lowercase;
@@ -58,6 +57,11 @@ header {
     padding: 20px;
     line-height: 2;
 }
+#content img {
+    max-width:33%;
+    max-height:20%;
+    margin:30px;
+}
 footer {
     clear: both;
     text-align: center;
@@ -66,6 +70,3 @@ footer {
     padding-bottom: 10px;
     /*make it stick to the bottom of the viewport*/
 }
-
-
-
