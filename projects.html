@@ -4,33 +4,40 @@
         <title>Radish's Webpage</title>
         <script type="text/javascript" src="theme.js"></script>
         <link rel="stylesheet" href="style.css">
-        <link rel="stylesheet" id="theme-link">
-        <script>
-            if(localStorage.getItem("theme") === "dark")
-                document.getElementById("theme-link").href="dark-theme.css";
-            else
-                document.getElementById("theme-link").href="light-theme.css";
-        </script>
+        <link rel="stylesheet" id="theme-link" href="light-theme.css">
     </head>
     
     <body>
         <header>
             <div class="container">
                 <h1><a href="/">Proyecto AP Computer Science Principles</a></h1>
-                <p>Para Mr. Willis. Gracias por enseñarnos.</p>
-                <button type="button" autofocus="true" onclick="flip()">Toggle dark theme</button>
+                <p>Gracias por enseñarnos.</p>
+                <button type="button" autofocus="true" onclick="flip()">Toggle theme</button>
 
                 <nav><ul>
-                    <li><a href = "/">Home.</a></li>
-                    <li><a href = "/projects.html">Projects.</a></li>
-                    <li><a href = "/contact.html">Contact.</a></li>
+                    <li><a href="/">Home.</a></li>
+                    <li><a id="current" href="/projects.html">Projects.</a></li>
+                    <li><a href="/shrimp.html">Shrimp.</a></li>
+                    <li><a href="/about.html">About.</a></li>
                 </ul></nav>
             </div>
         </header>
             
         <div class="container">
             <section id="content">
-                <p>No projects yet.</p>
+                <h1>First project: this website (HTML/CSS/Javascript)</h1>
+                <p>Look around, look around at how lucky we are to be alive right now!</p>
+                
+                <h1>Second project: Mad Libs (Python)</h1>
+                <p>I created this in about an hour, and I only had to google a few things for it! I used text from <i>A Cypherpunk's Manifesto</i>.</p>
+                <iframe src="https://trinket.io/embed/python/a9a23bcd10" width="100%" height="600" frameborder="0" marginwidth="0" marginheight="0" allowfullscreen></iframe>
+                
+                <h1>Third project: Choose-Your-Own-Adventure (Python)</h1>
+                <p>This took a little longer. It's a shrimp-inspired choose-your-own-adventure!</p>
+                <iframe src="https://trinket.io/embed/python/7134009ecc" width="100%" height="600" frameborder="0" marginwidth="0" marginheight="0" allowfullscreen></iframe>
+
+
+
             </section>
         </div>
         
