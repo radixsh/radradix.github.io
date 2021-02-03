@@ -4,13 +4,7 @@
         <title>Radish's Webpage</title>
         <script type="text/javascript" src="theme.js"></script>
         <link rel="stylesheet" href="style.css">
-        <link rel="stylesheet" id="theme-link">
-        <script>
-            if(localStorage.getItem("theme") === "dark")
-                document.getElementById("theme-link").href="dark-theme.css";
-            else
-                document.getElementById("theme-link").href="light-theme.css";
-        </script>
+        <link rel="stylesheet" id="theme-link" href="light-theme.css">
     </head>
     
     <body>
@@ -18,12 +12,13 @@
             <div class="container">
                 <h1><a href="/">Proyecto AP Computer Science Principles</a></h1>
                 <p>Para Mr. Willis. Gracias por enseñarnos.</p>
-                <button type="button" autofocus="true" onclick="flip()">Toggle dark theme</button>
+                <button type="button" autofocus="true" onclick="flip()">Toggle theme</button>
 
                 <nav><ul>
-                    <li><a href = "/">Home.</a></li>
-                    <li><a href = "/projects.html">Projects.</a></li>
-                    <li><a href = "/contact.html">Contact.</a></li>
+                    <li><a id="current" href="/">Home.</a></li>
+                    <li><a href="/projects.html">Projects.</a></li>
+                    <li><a href="/shrimp.html">Shrimp.</a></li>
+                    <li><a href="/about.html">About.</a></li>
                 </ul></nav>
             </div>
         </header>
@@ -35,14 +30,14 @@
         
         <div class="container">
             <section id="content">
-                <p>Je suis Radish. Je préfère apprendre les langues humaines plus que les langues des ordinateurs, mais j'espère étudier tous les deux dans la uni. Je travaille dans la cybersécurité avec l'équipe Code Red.</p>
-                <p>J'ai créé ce site pour la classe AP Computer Science Principles.</p>
+                <p>I created this site for AP Computer Science Principles.</p>
+                <p>I don't know how to keep the page theme across the entire browsing session without using cookies, and I believe CodeHS doesn't allow cookies. :(</p>
             </section>
         </div>
         
         <footer>
             <p>radish. 2020. APCSP.</p>
-            <p><a href="mailto:radradixcs@gmail.com">Send email.</a></p>
+            <p><a href="mailto:elizabeth.pai@lvjusd.org">Send email.</a></p>
         </footer>
     </body>
 </html>
